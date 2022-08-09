@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="wrapper">
+            <button class="close"><img src="img/icon-close.svg" alt=""></button>
+            <h1 class="title">Добавить ТОВАР</h1>
+            
+            <form class="form" id="form" action="#" method="POST">
+                <div class="form__wrapper-inp form__wrapper-inp-1">
+                    <h2 class="form__subtitle">Наименование</h2> 
+                    <input type="text" name="name" required class="form__input">
+                </div>
+                    
+                <div class="form__wrapper-inp form__wrapper-inp-2">
+                    <h2 class="form__subtitle">Катеогория</h2> 
+                    <input type="text" name="name" required class="form__input">
+                </div>
+
+                <div class="form__wrapper-area">
+                    <h2 class="form__subtitle">Описание</h2>
+                    <textarea name="description" class="form__input form__area"></textarea>
+                </div>
+                <div class="form__wrapper-inp form__wrapper-inp-3">
+                    <h2 class="form__subtitle">Единицы измерения</h2> 
+                    <input type="text" name="name" required class="form__input">
+                </div>
+
+                <div class="form__wrapper-inp form__wrapper-inp-4">
+                    <h2 class="form__subtitle">Количество</h2> 
+                    <input type="text" name="name" required class="form__input">
+                </div>
+
+                <div class="form__wrapper-chk">
+                    <h2 class="form__subtitle">Дисконт</h2> 
+                    <div class="chk-wrap">
+                        <input type="checkbox" name="sale" value="true" class="form__input form__input_chk" checked>
+                         <input type="text" name="text" class="form__input form__input_sale">
+                    </div>
+                    
+                </div>
+                <div class="form__wrapper-inp form__wrapper-inp-5">
+                    <h2 class="form__subtitle">Цена</h2> 
+        	        <input type="text" name="name" required class="form__input">
+                </div>
+                <p class="form__caption">Изображение не должно превышать размер 1 Мб</p>
+                <div class="loader-wrapper" >
+                    <input id="files" style="visibility:hidden;" type="file">
+                    <label for="files" class="btn label-btn">Добавить изображение</label> 
+                </div>
+             
+                <div class="wrapper-error"><button class="close"><img src="img/icon-close.svg" alt=""></button><button><img src="img/icon-error.svg" alt=""></button><p>Что-то пошло не так</p></div>
+            </form>  
+                <div class="form-footer">
+                    <p>Итоговая стоимость: <span>$ 900.00</span></p> <button type="button" class="btn" form="form">Добавить товар</button>
+                </div>
+                
+        </div>
+    </div>
+</body>
+</html>
